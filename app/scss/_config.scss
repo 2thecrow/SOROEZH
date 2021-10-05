@@ -1,0 +1,94 @@
+// USER VARIABLES SECTION
+:root {
+    --main-bg: #f2f2f2;
+    --main-text: #262626;
+    --white-text: #fff;
+}
+$fontsize: 16px; // Body Font Size
+$lineheight: 1.65; // Document Line Height
+$userfont: Roboto, sans-serif, Arial,-apple-system, BlinkMacSystemFont; // User Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+//$grid-gutter-width: 30px;
+//$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+//@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+//@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: local($fname), url($furl) format('woff2');
+		font-display: swap; // Uncomment to initially display system fonts
+	}
+}
+
+@include font('Roboto', normal, 300, '../fonts/roboto-300.woff2');
+@include font('Roboto', normal, 400, '../fonts/roboto-400.woff2');
+@include font('Roboto', normal, 700, '../fonts/roboto-700.woff2');
+@include font('Roboto', normal, 900, '../fonts/roboto-900.woff2');
+
+// GENERAL DOCUMENT STYLES
+
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+	  scroll-behavior: smooth;
+	}
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+::placeholder {
+	color: #666;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+body {
+	font-family: $userfont;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	background-color: var(--main-bg);
+	color: var(--main-text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1440px;
+	width: 100%;
+	padding: 0 15px;
+}
+.container-large {
+	max-width: 1665px;
+	width: 100%;
+	margin: 0 auto;
+}

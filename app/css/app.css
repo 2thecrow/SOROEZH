@@ -1,0 +1,130 @@
+:root {
+  --main-bg: #f2f2f2;
+  --main-text: #262626;
+  --white-text: #fff
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto"),url(../fonts/roboto-300.woff2) format("woff2");
+  font-display: swap
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"),url(../fonts/roboto-400.woff2) format("woff2");
+  font-display: swap
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto"),url(../fonts/roboto-700.woff2) format("woff2");
+  font-display: swap
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  src: local("Roboto"),url(../fonts/roboto-900.woff2) format("woff2");
+  font-display: swap
+}
+@media (prefers-reduced-motion:no-preference) {
+  :root {
+    scroll-behavior: smooth
+  }
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit
+}
+::-webkit-input-placeholder {
+  color: #666
+}
+::-moz-placeholder {
+  color: #666
+}
+:-ms-input-placeholder {
+  color: #666
+}
+::-ms-input-placeholder {
+  color: #666
+}
+::placeholder {
+  color: #666
+}
+input,
+textarea {
+  outline: 0
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  border-color: red
+}
+input:required:valid,
+textarea:required:valid {
+  border-color: green
+}
+body {
+  font-family: Roboto,sans-serif,Arial,-apple-system,BlinkMacSystemFont;
+  font-size: 16px;
+  line-height: 1.65;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden
+}
+.wrapper {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 15px
+}
+.container-large {
+  max-width: 1665px;
+  width: 100%;
+  margin: 0 auto
+}
+.header-nav {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto
+}
+.header-nav_welcome {
+  max-width: 1665px;
+  margin-top: 30px;
+  margin-bottom: -60px
+}
+.header-nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.header-nav__right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
