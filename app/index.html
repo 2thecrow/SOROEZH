@@ -30,7 +30,7 @@
 		<div class="container">
 			<div class="header-nav__wrapper">
 				<a href="/" class="header-nav__logo">
-					<img src="/img/dest/logo.png" alt="Logo">
+					<img src="/img/dest/logo.png" alt="Logo" loading="lazy">
 				</a>
 				<div class="header-nav__right">
 					<div class="header-nav__slogan">Чистота ко двору!</div>
@@ -42,18 +42,81 @@
 							</div>
 							<a href="mailto:info@ekograd.su" class="contact__mail">info@ekograd.su</a>
 						</div>
-						<div class="header-nav__callback callback-btn">Обратная связь</div>
+						<div class="header-nav__callback">
+							<div class="callback-btn">Обратная связь</div>
+						</div>
+					</div>
+				</div>
+				<div class="burger">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+				</div>
+				<div class="mobile-menu">
+					<div class="mobile-menu__close">
+						<svg viewBox="0 0 24 24">
+							<path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849z"></path>
+						</svg>
+					</div>
+					<div class="mobile-menu__container">
+						<ul class="mobile-menu__nav mobile-nav">
+							<li class="mobile-nav__item">
+								<a href="#" class="mobile-nav__link">Меню</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</nav>
 
+	<h1 class="visibility-hidden"></h1>
+
 	<div class="welcome-hero wrapper">
 		<div class="swiper welcome-slider">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide">Slide 1</div>
-				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">
+					<div class="welcome-slider__item" style="background-image: url(/img/dest/test-layout/welcome-slide_1.jpg);">
+						<div class="container">
+							<div class="welcome-slider__title">Современное управление</div>
+							<div class="welcome-slider__description">
+								Собственная диспетчерская служба с инновационными 
+								системами контроля транспорта
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="welcome-slider__item" style="background-image: url(/img/dest/test-layout/welcome-slide_1.jpg);">
+						<div class="container">
+							<div class="welcome-slider__title">Современное управление 1</div>
+							<div class="welcome-slider__description">
+								Собственная диспетчерская служба с инновационными 1
+								системами контроля транспорта
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="welcome-slider__item" style="background-image: url(/img/dest/test-layout/welcome-slide_1.jpg);">
+						<div class="container">
+							<div class="welcome-slider__title">Современное управление 2</div>
+							<div class="welcome-slider__description">
+								Собственная диспетчерская служба с инновационными 2
+								системами контроля транспорта
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="welcome-slider__item" style="background-image: url(/img/dest/test-layout/welcome-slide_1.jpg);">
+						<div class="container">
+							<div class="welcome-slider__title">Современное управление 3</div>
+							<div class="welcome-slider__description">
+								Собственная диспетчерская служба с инновационными 3
+								системами контроля транспорта
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="welcome-swiper-nav">
 				<div class="swiper-button-prev"></div>
@@ -63,6 +126,48 @@
 		  </div>
 	</div>
 	
+	<div class="welcome-page-nav">
+		<div class="container">
+			<ul class="welcome-page-nav__list page-nav">
+				<li class="page-nav__item">
+					<a href="" class="page-nav__link">
+						<div class="page-nav__icon">
+							<img src="/img/dest/icons/garbage-container-icon.png" alt="Аренда и продажа контейнеров" loading="lazy">
+						</div>
+						Аренда и продажа контейнеров
+					</a>
+				</li>
+				<li class="page-nav__item">
+					<a href="" class="page-nav__link">
+						<div class="page-nav__icon">
+							<img src="/img/dest/icons/garbage-truck-icon.png" alt="Вывоз строительных отходов" loading="lazy">
+						</div>
+						Вывоз строительных отходов
+					</a>
+				</li>
+				<li class="page-nav__item">
+					<a href="" class="page-nav__link">
+						<div class="page-nav__icon">
+							<img src="/img/dest/icons/bricks-icon.png" alt="Прием отходов  на МПС " loading="lazy">
+						</div>
+						Прием отходов  на МПС 
+						<span class="page-nav__tooltip">
+							<img src="/img/dest/icons/information-tooltip-icon.png" alt="Tooltip" loading="lazy">
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
 </body>
 
 </html>

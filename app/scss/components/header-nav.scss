@@ -3,7 +3,11 @@
     max-width: 1920px;
     width: 100%;
     background-color: #fff;
+    padding: 20px 0 10px;
     margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: -11.314px 11.314px 48px 0px rgba(206, 206, 206, 0.32); 
+    z-index: 2;
     &_welcome {
         max-width: 1665px;
         margin-top: 30px;
@@ -13,25 +17,141 @@
         display: flex;
         justify-content: space-between;
     }
-    &__logo {}
+    &__logo {
+        margin-left: -5px;
+        margin-right: 25px;
+        img {
+            
+        }
+    }
     &__right {
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
-    &__slogan {}
-    &__info {}
+    &__slogan {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    &__info {
+        display: flex;
+        padding: 10px 0 0;
+        /* align-items: center; */
+    }
     &__contacts {}
+    &__callback {
+        padding: 5px 0 0;
+    }
 }
 
 .contact {
-    &__phone {}
-    &__text {}
-    &__link {}
-    &__mail {}
-    &__callback {}
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 70px;
+    &__phone {
+        display: flex;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 5px;
+    }
+    &__text {
+        margin-right: 10px;
+    }
+    &__link {
+        position: relative;
+        display: block;
+        font-weight: 900;
+        color: var(--main-text);
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-left: 25px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-image: url(/img/dest/icons/phone-icon_dark.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__mail {
+        position: relative;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 36px;
+        color: var(--accent);
+        padding-left: 30px;
+        text-decoration: none;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 53%;
+            transform: translateY(-50%);
+            display: block;
+            width: 17px;
+            height: 13px;
+            background-image: url(/img/dest/icons/main-icon_accent.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__callback {
+       
+    }
 }
 
 .callback-btn {
-
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding: 10px 46px;
+    border-radius: 8px;
+    background: linear-gradient( 41deg, rgb(140,198,62) 0%, rgb(186,225,31) 100%);
+    box-shadow: 0px 4px 24px 0px rgba(110, 127, 139, 0.48),inset 0px -4px 0px 0px rgba(140, 198, 62, 0.38);
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        border-radius: 8px;
+        background: linear-gradient( 41deg, rgb(186,225,31) 0%,  rgb(140,198,62)100%);
+        transition: all .3s ease-in-out;
+        z-index: -1;
+    }
+    &:hover {
+        transition: all .3s ease-in-out;
+        &::before {
+            opacity: 1;
+            transition: all .3s ease-in-out;
+        }
+        
+        
+    }
 }

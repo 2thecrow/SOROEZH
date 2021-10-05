@@ -1,0 +1,112 @@
+@media screen and (max-width:1665px) {
+    .header-nav_welcome {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:1255px) {
+    .header-nav__slogan {
+        display: none;
+    }
+    .header-nav__right {
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width:1050px) {
+    .contact {
+        justify-content: center;
+        margin-right: 30px;
+        &__phone {
+            font-size: 20px;
+            line-height: 25px;
+        }
+        &__mail {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+    .header-nav {
+        &__logo {
+            width: 250px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__info {
+            padding: 0;
+        }
+        &__callback {
+            display: flex;
+            align-items: center;
+            padding: 0;
+        }
+        .callback-btn {
+            padding: 5px 36px;
+        }
+    }
+}
+@media screen and (max-width:805px) {
+    .contact__text {
+        display: none;
+    }
+}
+
+/* 768px */
+@media screen and (max-width:767.9px) {
+    .header-nav {
+        padding: 15px 0;
+        &__logo {
+            display: flex;
+            align-items: center;
+        }
+        .callback-btn {
+            padding: 5px 25px;
+        }
+    }
+    .contact {
+        margin-right: 20px;
+        &__mail {
+            font-size: 16px;
+            line-height: 21px;
+            padding-left: 20px;
+            &::before {
+                width: 14px;
+                height: 10px;
+            }
+        }
+        &__phone {
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 0;
+        }
+        &__link {
+            padding-left: 15px;
+            &::before {
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
+
+/* 576px */
+@media screen and (max-width:575.9px) {
+    .burger {
+        display: flex;
+    }
+    .header-nav .callback-btn {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:380px) {
+    .contact {
+        margin-right: 10px;
+    }
+    .header-nav__logo {
+        margin-right: 5px;
+    }
+}

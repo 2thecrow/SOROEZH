@@ -3,6 +3,7 @@
     --main-bg: #f2f2f2;
     --main-text: #262626;
     --white-text: #fff;
+	--accent: #ff7b36;
 }
 $fontsize: 16px; // Body Font Size
 $lineheight: 1.65; // Document Line Height
@@ -86,9 +87,15 @@ body {
 	max-width: 1440px;
 	width: 100%;
 	padding: 0 15px;
+	margin: 0 auto;
 }
 .container-large {
 	max-width: 1665px;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.visibility-hidden {
+	position: absolute;
+	visibility: hidden;
 }
