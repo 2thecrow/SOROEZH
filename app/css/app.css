@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --main-bg: #f2f2f2;
   --main-text: #262626;
@@ -101,10 +100,6 @@ body {
   max-width: 1665px;
   width: 100%;
   margin: 0 auto
-}
-.visibility-hidden {
-  position: absolute;
-  visibility: hidden
 }
 .overlay {
   position: fixed;
@@ -354,6 +349,75 @@ body {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out
 }
+.page-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+  gap: 30px
+}
+.page-nav__item {
+  background-color: #8cc63e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+.page-nav__item_garbage-container {
+  background-image: url(/img/dest/page-nav/garbage-container-bg.jpg)
+}
+.page-nav__item_garbage-truck {
+  background-image: url(/img/dest/page-nav/garbage-truck-bg.jpg)
+}
+.page-nav__item_bricks {
+  background-image: url(/img/dest/page-nav/bricks-bg.jpg)
+}
+.page-nav__item:hover {
+  background-color: #fafafa;
+  background-image: none;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+.page-nav__link {
+  max-width: 450px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--main-text);
+  padding: 40px 50px;
+  border-radius: 8px;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+.page-nav__link:hover {
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+.page-nav__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 25px
+}
+.page-nav__tooltip {
+  z-index: 2
+}
 .welcome-slider {
   height: 850px;
   position: relative
@@ -507,13 +571,73 @@ body {
 .welcome-slider .welcome-swiper-nav .swiper-button-prev:after {
   display: none
 }
-.Прямоугольник__скругл__углы_2 {
-  background-color: #fff;
-  opacity: .161;
-  position: absolute;
-  left: 852px;
-  top: 688px;
-  z-index: 11
+.welcome-page-nav__list {
+  position: relative;
+  z-index: 2;
+  margin-top: -70px!important
+}
+.welcome-page-nav__list .page-nav__item_bricks .page-nav__link-text {
+  max-width: 180px
+}
+.welcome-advantages {
+  padding: 125px 0
+}
+.welcome-advantages__container {
+  background-color: rgba(255,255,255,.4);
+  border: 1px dashed #ededed;
+  border-radius: 8px;
+  padding: 45px 0 5px
+}
+.welcome-advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.welcome-advantages__item {
+  max-width: 240px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 80px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 15px 0 15px 40px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: left center
+}
+.welcome-advantages__item:nth-child(1) {
+  background-image: url(/img/dest/icons/advantages-avto-park-icon.png)
+}
+.welcome-advantages__item:nth-child(2) {
+  background-image: url(/img/dest/icons/advantages-license-icon.png);
+  padding: 15px 0 15px 50px
+}
+.welcome-advantages__item:nth-child(3) {
+  background-image: url(/img/dest/icons/advantages-certificate-icon.png);
+  padding: 15px 0 15px 40px
+}
+.welcome-advantages__item:nth-child(4) {
+  background-image: url(/img/dest/icons/advantages-age-icon.png);
+  padding: 15px 0 15px 40px
+}
+.welcome-advantages__item:nth-child(5) {
+  background-image: url(/img/dest/icons/advantages-team-icon.png);
+  padding: 15px 0 15px 40px
+}
+.welcome-advantages__item:not(:last-child) {
+  margin-right: 15px
 }
 @media screen and (max-width:1665px) {
   .header-nav_welcome {

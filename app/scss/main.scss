@@ -1,6 +1,9 @@
 @import 'config';
 @import 'mobile-menu';
 @import 'components/header-nav';
-@import 'components/welcome-hero';
+@import 'components/page-nav';
+@import 'welcome/welcome-hero';
+@import 'welcome/welcome-page-nav';
+@import 'welcome/welcome-advantages';
 
 @import 'media.scss';

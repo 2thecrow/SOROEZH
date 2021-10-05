@@ -1,0 +1,54 @@
+.page-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    gap: 30px;
+    &__item {
+        background-color: #8cc63e;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+        transition: all .3s ease-in-out;
+        &_garbage-container {
+            background-image: url(/img/dest/page-nav/garbage-container-bg.jpg);
+        }
+        &_garbage-truck {
+            background-image: url(/img/dest/page-nav/garbage-truck-bg.jpg);
+        }
+        &_bricks {
+            background-image: url(/img/dest/page-nav/bricks-bg.jpg);
+        }
+        &:hover {
+            background-color: #fafafa;
+            background-image: none;
+            transition: all .3s ease-in-out;
+        }
+    }
+    &__link {
+        max-width: 450px;
+        width: 100%;
+        display: flex;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--main-text);
+        padding: 40px 50px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+        &:hover {
+            transition: all .3s ease-in-out;
+        }
+    }
+    &__icon {
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+    }
+    &__tooltip {
+        z-index: 2;
+    }
+}
+  

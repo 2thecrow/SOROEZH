@@ -1,0 +1,12 @@
+.welcome-page-nav {
+    &__list {
+        position: relative;
+        z-index: 2;
+        margin-top: -70px !important;
+        .page-nav__item_bricks {
+            .page-nav__link-text {
+                max-width: 180px;
+            }
+        }
+    }
+}
