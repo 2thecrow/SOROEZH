@@ -294,37 +294,45 @@
 		</div>
 	</div>
 
-	<div class="calculator wrapper">
+	<!-- calculator /  calculator_welcome -->
+	<div class="calculator calculator_welcome wrapper">
 		<div class="calculator__container container-large"> 
-			<h2 class="calculator__title"></h2>
+			<h2 class="calculator__title">Калькулятор услуг</h2>
 			<div class="calculator__block calculator-block">
-				<div class="calculator-block__header">
+				<!-- calculator-block__header_welcome / calculator-block__header_page -->
+				<div class="calculator-block__header calculator-block__header_page">
 					<div class="container">
-						<h3 class="calculator-block__title"></h3>
+						<h3 class="calculator-block__title">Выберите нужную услугу</h3>
 					</div>
+					<!-- nav for welcome page -->
+					<div class="calculator-block__nav container">
+						<ul class="calculator-nav">
+							<li class="calculator-nav__item">
+								<a href="#calc-1" class="calculator-nav__link calculator-nav__link--active">Аренда и продажа контейнеров</a>
+							</li>
+							<li class="calculator-nav__item">
+								<a href="#calc-2" class="calculator-nav__link">Вывоз строительных отходов</a>
+							</li>
+							<li class="calculator-nav__item">
+								<a href="#calc-3" class="calculator-nav__link">
+									Прием отходов на МПС
+									<span class="calculator-nav__tooltip">
+										<img src="/img/dest/icons/information-tooltip-icon.png" alt="Tooltip" loading="lazy">
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- end of nav for welcome page -->
 				</div>
-				<div class="calculator-block__body container">
-					<ul class="calculator-block__nav calculator-nav">
-						<li class="calculator-nav__item">
-							<a href="#calc-1" class="calculator-nav__link calculator-nav__link--active">Аренда и продажа контейнеров</a>
-						</li>
-						<li class="calculator-nav__item">
-							<a href="#calc-2" class="calculator-nav__link">Вывоз строительных отходов</a>
-						</li>
-						<li class="calculator-nav__item">
-							<a href="#calc-3" class="calculator-nav__link">
-								Прием отходов на МПС
-								<span class="calculator-nav__tooltip">
-									<img src="/img/dest/icons/information-tooltip-icon.png" alt="Tooltip" loading="lazy">
-								</span>
-							</a>
-						</li>
-					</ul>
-					<div class="calculator-block__content calculator-content">
-						<div id="calc-1" class="calculator-content__item calculator-content__item--active">
+				<div class="calculator-block__content calculator-content">
+					<!-- tab 1 -->
+					<div id="calc-1" class="calculator-content__item calculator-content__item_container calculator-content__item--active">
+						<div class="container">
 							<div class="calculator-content__title">Аренда и продажа контейнеров</div>
 							<ul class="calculator-content__form calculator-form">
 								<li class="calculator-form__item">
+									<div class="calculator-form__title">Услуга</div>
 									<ul class="calculator-form__radio-group radio-group radio-group_service">
 										<li class="radio-group__field">
 											<input type="radio" name="service" id="service-1" class="radio-group__input-radio" checked="checked">
@@ -337,18 +345,20 @@
 									</ul>
 								</li>
 								<li class="calculator-form__item">
+									<div class="calculator-form__title">Тип контейнера</div>
 									<ul class="calculator-form__radio-group radio-group radio-group_container">
 										<li class="radio-group__field">
 											<input type="radio" name="container" id="container-1" class="radio-group__input-radio" checked="checked">
-											<label for="service-1" class="radio-group__label">Новый</label>
+											<label for="container-1" class="radio-group__label">Новый</label>
 										</li>
 										<li class="radio-group__field">
 											<input type="radio" name="container" id="container-2" class="radio-group__input-radio">
-											<label for="service-2" class="radio-group__label">Б/у в хорошем сотоянии</label>
+											<label for="container-2" class="radio-group__label">Б/у в хорошем сотоянии</label>
 										</li>
 									</ul>
 								</li>
 								<li class="calculator-form__item">
+									<div class="calculator-form__title">Выбрать город</div>
 									<select name="town" class="default-select" aria-label="Выберите город">
 										<option value="">Выберите город</option>
 										<option value="Город 1">Город 1</option>
@@ -359,26 +369,41 @@
 									</select>
 								</li>
 								<li class="calculator-form__item">
-									<input type="text">
+									<div class="calculator-form__title">Количество контейнеров</div>
+									<div class="defaul__input">
+										<input type="text" class="defaul__input-text" placeholder="Укажите количество контейнеров от 1 до 100">
+									</div>
 								</li>
 								<li class="calculator-form__item">
-									<ul class="calculator-form__radio-group radio-group radio-group_container">
-										<li class="radio-group__field">
-											<input type="radio" name="container" id="container-1" class="radio-group__input-radio" checked="checked">
-											<label for="service-1" class="radio-group__label">Новый</label>
+									<div class="calculator-form__title">Вид контейнера</div>
+									<ul class="calculator-form__radio-group radio-container">
+										<li class="radio-container__field">
+											<input type="radio" name="type-container" id="type-container-1" class="radio-container__input-radio" checked="checked">
+											<label for="type-container-1" class="radio-container__label radio-container__label_plastic">1,1 м3 (Пластик) </label>
 										</li>
-										<li class="radio-group__field">
-											<input type="radio" name="container" id="container-2" class="radio-group__input-radio">
-											<label for="service-2" class="radio-group__label">Б/у в хорошем сотоянии</label>
+										<li class="radio-container__field">
+											<input type="radio" name="type-container" id="type-container-2" class="radio-container__input-radio">
+											<label for="type-container-2" class="radio-container__label radio-container__label_metal">7.8 м3 (Металл) </label>
+										</li>
+										<li class="radio-container__field">
+											<input type="radio" name="type-container" id="type-container-3" class="radio-container__input-radio">
+											<label for="type-container-3" class="radio-container__label radio-container__label_full-metal">36 м3 (Металл) </label>
 										</li>
 									</ul>
 								</li>
 							</ul>
 						</div>
-						<div id="calc-2" class="calculator-content__item">
+						
+					</div>
+					<!-- tab 2 -->
+					<div id="calc-2" class="calculator-content__item calculator-content__item_garbage">
+						<div class="container">
 							<div class="calculator-content__title">Вывоз строительных отходов</div>
 						</div>
-						<div id="calc-3" class="calculator-content__item">
+					</div>
+					<!-- tab 3 -->
+					<div id="calc-3" class="calculator-content__item calculator-content__item_business">
+						<div class="container">
 							<div class="calculator-content__title">Прием отходов на МПС</div>
 						</div>
 					</div>

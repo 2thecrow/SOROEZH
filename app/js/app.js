@@ -62,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const defaultSelect = () => {
         const element = document.querySelector('.default-select');
           const choices = new Choices(element, {
-            searchEnabled: false,
+              searchEnabled: false,
+              silent: true,
         });
     
         let ariaLabel = element.getAttribute('aria-label');
