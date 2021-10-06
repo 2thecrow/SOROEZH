@@ -5,5 +5,39 @@
 
 /* select arrow */
 .choices[data-type*=select-one]:after {
-    display: none;
+    /* default */
+    border: none;
+    margin: 0;
+    /* main */
+    content: '';
+    position: absolute;
+    right: 11.5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-image: url(/img/dest/calc/select-arrow.png);
+    pointer-events: none;
+}
+.choices[data-type*=select-one].is-open:after {
+    /* default */
+    border: none;
+    margin: 0;
+    /* main */
+    transform: rotate(-180deg) translateY(+50%);
+}
+
+.choices__inner {
+    height: 56px;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: var(--white-bg);
+    padding: 15px 20px 15px;
+    border: 1px solid #ededed;
+    border-radius: 2.5px;
+}
+
+.choices__list--single {
+    padding: 0;
 }

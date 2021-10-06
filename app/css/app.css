@@ -495,7 +495,39 @@ body {
   display: none
 }
 .choices[data-type*=select-one]:after {
-  display: none
+  border: none;
+  margin: 0;
+  content: '';
+  position: absolute;
+  right: 11.5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-image: url(/img/dest/calc/select-arrow.png);
+  pointer-events: none
+}
+.choices[data-type*=select-one].is-open:after {
+  border: none;
+  margin: 0;
+  -webkit-transform: rotate(-180deg) translateY(50%);
+  -ms-transform: rotate(-180deg) translateY(50%);
+  transform: rotate(-180deg) translateY(50%)
+}
+.choices__inner {
+  height: 56px;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: var(--white-bg);
+  padding: 15px 20px 15px;
+  border: 1px solid #ededed;
+  border-radius: 2.5px
+}
+.choices__list--single {
+  padding: 0
 }
 .welcome-slider {
   height: 850px;
