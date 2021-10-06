@@ -1,9 +1,15 @@
+//global
 @import 'config';
 @import 'mobile-menu';
 @import 'components/header-nav';
 @import 'components/page-nav';
+@import 'components/page-nav';
+@import 'components/choices';
+//welcome page
 @import 'welcome/welcome-hero';
 @import 'welcome/welcome-page-nav';
 @import 'welcome/welcome-advantages';
+//pages
+@import 'components/calc';
 
 @import 'media.scss';

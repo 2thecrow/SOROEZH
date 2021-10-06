@@ -13,10 +13,21 @@
 	<link rel="stylesheet" href="/css/normalize.css">
 	<!-- Swiper styles -->
 	<link rel="stylesheet" href="/mylibs/swiper/swiper-bundle.min.css">
+	<!-- Choices select styles -->
+	<link rel="stylesheet" href="/mylibs/choices/choices.min.css">
 	<!-- main styles -->
 	<link rel="stylesheet" href="/css/app.css">
 	<!-- Swiper js -->
 	<script src="/mylibs/swiper/swiper-bundle.min.js"></script>
+	<!-- Choices select js -->
+	<script src="/mylibs/choices/choices.min.js"></script>
+	
+	<!-- Jquery del link on test server -->
+	<script
+	src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+	
 	<!-- main js -->
 	<script src="/js/app.min.js"></script>
 
@@ -207,7 +218,7 @@
 					<div class="welcome-tips__card">
 						<div class="welcome-tips__content">
 							<div class="welcome-tips__icon">
-								<img src="/img/dest/icons/advantages-lamp-icon.png" alt="Icon">
+								<img src="/img/dest/icons/advantages-lamp-icon.png" alt="Icon" loading="lazy">
 							</div>
 							<div class="welcome-tips__description">
 								Молодая и&nbsp;динамично развивающаяся компания ЭкоГрад, 
@@ -225,7 +236,7 @@
 							</div>
 						</div>
 						<div class="welcome-tips__image">
-							<img src="/img/dest/advantages/garbage-truck.png" alt="Truck">
+							<img src="/img/dest/advantages/garbage-truck.png" alt="Truck" loading="lazy">
 						</div>
 					</div>
 				</li>
@@ -233,7 +244,7 @@
 					<div class="welcome-tips__card">
 						<div class="welcome-tips__content">
 							<div class="welcome-tips__icon">
-								<img src="/img/dest/icons/advantages-guaranteed-icon.png" alt="Icon">
+								<img src="/img/dest/icons/advantages-guaranteed-icon.png" alt="Icon" loading="lazy">
 							</div>
 							<div class="welcome-tips__description">
 								Доверяя нам, можете не&nbsp;сомневаться 
@@ -241,7 +252,7 @@
 							</div>
 						</div>
 						<div class="welcome-tips__image">
-							<img src="/img/dest/advantages/documents.png" alt="Documents">
+							<img src="/img/dest/advantages/documents.png" alt="Documents" loading="lazy">
 						</div>
 					</div>
 				</li>
@@ -249,7 +260,7 @@
 					<div class="welcome-tips__card">
 						<div class="welcome-tips__content">
 							<div class="welcome-tips__icon">
-								<img src="/img/dest/icons/advantages-trophy-icon.png" alt="Icon">
+								<img src="/img/dest/icons/advantages-trophy-icon.png" alt="Icon" loading="lazy">
 							</div>
 							<div class="welcome-tips__description">
 								Крупнейший оператор по&nbsp;обращению с&nbsp;отходами по&nbsp;зоне &laquo;Юг&raquo; Кузбасса
@@ -271,7 +282,7 @@
 					<div class="welcome-tips__card">
 						<div class="welcome-tips__content">
 							<div class="welcome-tips__icon">
-								<img src="/img/dest/icons/advantages-headphones-icon.png" alt="Icon">
+								<img src="/img/dest/icons/advantages-headphones-icon.png" alt="Icon" loading="lazy">
 							</div>
 							<div class="welcome-tips__description">
 								Диспетчерская служба оборудована инновационными системами контроля за&nbsp;передвижением мусоровозов.
@@ -280,6 +291,99 @@
 					</div>
 				</li>
 			</ul>
+		</div>
+	</div>
+
+	<div class="calculator wrapper">
+		<div class="calculator__container container-large"> 
+			<h2 class="calculator__title"></h2>
+			<div class="calculator__block calculator-block">
+				<div class="calculator-block__header">
+					<div class="container">
+						<h3 class="calculator-block__title"></h3>
+					</div>
+				</div>
+				<div class="calculator-block__body container">
+					<ul class="calculator-block__nav calculator-nav">
+						<li class="calculator-nav__item">
+							<a href="#calc-1" class="calculator-nav__link calculator-nav__link--active">Аренда и продажа контейнеров</a>
+						</li>
+						<li class="calculator-nav__item">
+							<a href="#calc-2" class="calculator-nav__link">Вывоз строительных отходов</a>
+						</li>
+						<li class="calculator-nav__item">
+							<a href="#calc-3" class="calculator-nav__link">
+								Прием отходов на МПС
+								<span class="calculator-nav__tooltip">
+									<img src="/img/dest/icons/information-tooltip-icon.png" alt="Tooltip" loading="lazy">
+								</span>
+							</a>
+						</li>
+					</ul>
+					<div class="calculator-block__content calculator-content">
+						<div id="calc-1" class="calculator-content__item calculator-content__item--active">
+							<div class="calculator-content__title">Аренда и продажа контейнеров</div>
+							<ul class="calculator-content__form calculator-form">
+								<li class="calculator-form__item">
+									<ul class="calculator-form__radio-group radio-group radio-group_service">
+										<li class="radio-group__field">
+											<input type="radio" name="service" id="service-1" class="radio-group__input-radio" checked="checked">
+											<label for="service-1" class="radio-group__label">Продажа</label>
+										</li>
+										<li class="radio-group__field">
+											<input type="radio" name="service" id="service-2" class="radio-group__input-radio">
+											<label for="service-2" class="radio-group__label">Аренда</label>
+										</li>
+									</ul>
+								</li>
+								<li class="calculator-form__item">
+									<ul class="calculator-form__radio-group radio-group radio-group_container">
+										<li class="radio-group__field">
+											<input type="radio" name="container" id="container-1" class="radio-group__input-radio" checked="checked">
+											<label for="service-1" class="radio-group__label">Новый</label>
+										</li>
+										<li class="radio-group__field">
+											<input type="radio" name="container" id="container-2" class="radio-group__input-radio">
+											<label for="service-2" class="radio-group__label">Б/у в хорошем сотоянии</label>
+										</li>
+									</ul>
+								</li>
+								<li class="calculator-form__item">
+									<select name="town" class="default-select" aria-label="Выберите город">
+										<option value="">Выберите город</option>
+										<option value="Город 1">Город 1</option>
+										<option value="Город 2">Город 2</option>
+										<option value="Город 3">Город 3</option>
+										<option value="Город 4">Город 4</option>
+										<option value="Город 5">Город 5</option>
+									</select>
+								</li>
+								<li class="calculator-form__item">
+									<input type="text">
+								</li>
+								<li class="calculator-form__item">
+									<ul class="calculator-form__radio-group radio-group radio-group_container">
+										<li class="radio-group__field">
+											<input type="radio" name="container" id="container-1" class="radio-group__input-radio" checked="checked">
+											<label for="service-1" class="radio-group__label">Новый</label>
+										</li>
+										<li class="radio-group__field">
+											<input type="radio" name="container" id="container-2" class="radio-group__input-radio">
+											<label for="service-2" class="radio-group__label">Б/у в хорошем сотоянии</label>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div id="calc-2" class="calculator-content__item">
+							<div class="calculator-content__title">Вывоз строительных отходов</div>
+						</div>
+						<div id="calc-3" class="calculator-content__item">
+							<div class="calculator-content__title">Прием отходов на МПС</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 

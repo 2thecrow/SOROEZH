@@ -1,0 +1,9 @@
+/* select hint "Press enter" */
+.choices__list--dropdown .choices__item--selectable.is-highlighted:after {
+	display: none;
+}
+
+/* select arrow */
+.choices[data-type*=select-one]:after {
+    display: none;
+}

@@ -1,0 +1,43 @@
+.calculator {
+    &__container {}
+    &__title {}
+    &__block {}
+}
+
+.calculator-block {
+    &__header {}
+    &__title {}
+    &__body {}
+    &__nav {}
+    &__content {}
+}
+
+.calculator-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    gap: 30px;
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link {}
+    &__tooltip {}
+    &__link--active {}
+}
+
+.calculator-content {
+    &__item {
+        display: none;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__item--active {
+        display: block;
+    }
+}

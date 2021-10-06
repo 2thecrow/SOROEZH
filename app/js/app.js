@@ -50,13 +50,25 @@ document.addEventListener('DOMContentLoaded', () => {
         unlockScroll();
     });
 
-    /* $('.buy-apartment__tab').click(function (e) {
+    $('.calculator-nav__link').click(function (e) {
         e.preventDefault();
-        $('.buy-apartment__tab').removeClass('buy-apartment__tab--active');
-        $('.buy-apartment__tab-content').removeClass('buy-apartment__tab-content--active');
+        $('.calculator-nav__link').removeClass('calculator-nav__link--active');
+        $('.calculator-content__item').removeClass('calculator-content__item--active');
         var href = $(this).attr('href');
-        $(this).addClass('buy-apartment__tab--active');
-        $(href).addClass('buy-apartment__tab-content--active');
-    }); */
+        $(this).addClass('calculator-nav__link--active');
+        $(href).addClass('calculator-content__item--active');
+    });
+
+    const defaultSelect = () => {
+        const element = document.querySelector('.default-select');
+          const choices = new Choices(element, {
+            searchEnabled: false,
+        });
+    
+        let ariaLabel = element.getAttribute('aria-label');
+        element.closest('.choices').setAttribute('aria-label', ariaLabel);
+    };
+
+    defaultSelect();
 
 })
