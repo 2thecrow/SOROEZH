@@ -2,6 +2,7 @@
   --main-bg: #f2f2f2;
   --main-text: #262626;
   --white-text: #fff;
+  --white-bg: #fff;
   --accent: #ff7b36
 }
 @font-face {
@@ -580,7 +581,7 @@ body {
   max-width: 180px
 }
 .welcome-advantages {
-  padding: 125px 0
+  padding: 125px 0 65px
 }
 .welcome-advantages__container {
   background-color: rgba(255,255,255,.4);
@@ -638,6 +639,95 @@ body {
 }
 .welcome-advantages__item:not(:last-child) {
   margin-right: 15px
+}
+.welcome-advantages-tips {
+  padding: 65px 0
+}
+.welcome-tips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 250px;
+  grid-gap: 30px;
+  gap: 30px
+}
+.welcome-tips__item {
+  border-radius: 8px
+}
+.welcome-tips__item_white {
+  background-color: var(--white-bg)
+}
+.welcome-tips__item_big {
+  background-color: #f7f7f7
+}
+.welcome-tips__item_grey {
+  background-color: var(--main-bg)
+}
+.welcome-tips__item_grey .welcome-tips__content {
+  padding: 30px 50px 0
+}
+.welcome-tips__item_grey .welcome-tips__description {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px
+}
+.welcome-tips__item:nth-child(3) {
+  -ms-grid-row-span: 2;
+  grid-row: 2 span
+}
+.welcome-tips__item:nth-child(3) .welcome-tips__card {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.welcome-tips__item:nth-child(3) .welcome-tips__content {
+  padding: 40px 50px 15px
+}
+.welcome-tips__item:nth-child(4) {
+  -ms-grid-row-span: 2;
+  grid-row: 2 span
+}
+.welcome-tips__item:nth-child(4) .welcome-tips__content {
+  padding: 40px 50px 20px
+}
+.welcome-tips__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 100%
+}
+.welcome-tips__content {
+  padding: 30px 50px 40px
+}
+.welcome-tips__icon {
+  margin-bottom: 20px
+}
+.welcome-tips__description {
+  font-size: 18px;
+  line-height: 28px
+}
+.welcome-tips__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px
+}
+.welcome-tips__image img {
+  max-width: 100%;
+  width: 100%;
+  height: auto
 }
 @media screen and (max-width:1665px) {
   .header-nav_welcome {

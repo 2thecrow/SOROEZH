@@ -50,4 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
         unlockScroll();
     });
 
+    /* $('.buy-apartment__tab').click(function (e) {
+        e.preventDefault();
+        $('.buy-apartment__tab').removeClass('buy-apartment__tab--active');
+        $('.buy-apartment__tab-content').removeClass('buy-apartment__tab-content--active');
+        var href = $(this).attr('href');
+        $(this).addClass('buy-apartment__tab--active');
+        $(href).addClass('buy-apartment__tab-content--active');
+    }); */
+
 })
