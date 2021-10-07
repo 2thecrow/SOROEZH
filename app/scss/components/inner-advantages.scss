@@ -1,0 +1,44 @@
+.inner-advantages {
+    padding: 0 15px;
+    margin-top: -105px;
+    margin-bottom: 70px;
+    &__wrapper {
+        background-image: url(/img/dest/advantages/page-advantages-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 60px 0 23px;
+        border-radius: 8px;
+        box-shadow: 0px 24px 48px 0px rgba(219, 219, 219, 0.32);
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 335px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        min-height: 80px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 15px 0 15px 40px;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        background-position: left center;
+        &:nth-child(1) {
+            background-image: url(/img/dest/icons/advantages-license-icon.png);
+        }
+        &:nth-child(2) {
+            background-image: url(/img/dest/icons/advantages-age-icon.png);
+        }
+        &:nth-child(3) {
+            background-image: url(/img/dest/icons/advantages-team-icon.png);
+        }
+    }
+}
