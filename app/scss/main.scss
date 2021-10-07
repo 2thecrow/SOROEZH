@@ -5,6 +5,7 @@
 @import 'components/page-nav';
 @import 'components/page-nav';
 @import 'components/choices';
+@import 'components/footer';
 //welcome page
 @import 'welcome/welcome-hero';
 @import 'welcome/welcome-page-nav';
@@ -12,4 +13,6 @@
 //pages
 @import 'components/calc';
 
+
+//all media
 @import 'media.scss';
