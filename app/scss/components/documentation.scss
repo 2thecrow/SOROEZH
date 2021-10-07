@@ -1,0 +1,82 @@
+.documentation {
+    padding: 65px 0 100px;
+    /* background: url(/img/dest/documentation/documentation-left-bg.png), url(/img/dest/documentation/documentation-right-bg.png) ;
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+    background-size: cover; */
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 52px;
+        margin: 0;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    &__list {}
+}
+
+
+.documentation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px;
+    &__item {
+        flex: 0 0 240px;
+        padding: 0 15px;
+    }
+    &__card {
+        max-width: 210px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100% - 30px);
+        background-color: var(--white-bg);
+        padding: 35px 30px 30px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 25px;
+        overflow: hidden; /* include for safety */
+        display: -webkit-box; /* setting a block element  */
+        -webkit-box-orient: vertical; /* companion class   */
+        -webkit-line-clamp: 3; /* number of lines  */
+    }
+    &__bottom {}
+    &__btn {
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 26px;
+        color: #fa7835;
+        padding: 2px 16px;
+        border: 1px solid #fa7835;
+        border-radius: 3px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        transition: all .3s ease-in-out;
+        &:hover {
+            transition: all .3s ease-in-out;
+            color: var(--white-bg);
+            background-color: #fa7835;
+        }
+    }
+    &__btn-info {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: #787878;
+    }
+}
+  

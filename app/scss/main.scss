@@ -6,12 +6,15 @@
 @import 'components/page-nav';
 @import 'components/choices';
 @import 'components/footer';
+@import 'components/documentation';
 //welcome page
 @import 'welcome/welcome-hero';
 @import 'welcome/welcome-page-nav';
 @import 'welcome/welcome-advantages';
 //pages
 @import 'components/calc';
+@import 'pages/page';
+@import 'pages/container-page';
 
 
 //all media

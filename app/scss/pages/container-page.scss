@@ -1,0 +1,93 @@
+.inner-page-nav {
+    padding: 65px 0 0;
+    margin-bottom: -50px;
+    &__list {
+        
+    }
+    .page-nav {
+        &__item {
+            &:hover {
+                .page-nav__link {
+                    color: #787878;
+                    background-color: #fafafa;
+                }
+                
+            }
+        }
+        &__link {
+            justify-content: center;
+            align-items: center;
+            padding: 35px 15px;
+        }
+    }
+}
+
+.containers-grid {
+    margin-top: -230px;
+    margin-bottom: 80px;
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        gap: 30px;
+    }
+    &__item {
+        position: relative;
+        background-color: #f7f7f7;
+        padding: 110px 65px 65px;
+        border-radius: 2px;
+        transition: all .2s ease-in-out;
+        &_plastic {
+            .containers-grid__image {
+                top: 13%;
+                left: 26%;
+            }
+        }
+        &_metal {
+            .containers-grid__image {
+                top: 15%;
+                left: 23%;
+            }
+        }
+        &_full-metal {
+            .containers-grid__image {
+                top: 15%;
+                left: 22%
+            }
+        }
+        &:hover {
+            transition: all .2s ease-in-out;
+            background-color: #8cc63e;
+            .containers-grid__inner {
+                border: 4px solid #fff;
+            }
+            .containers-grid__title {
+                color: #fff;
+            }
+        }
+    }
+    &__inner {
+        display: flex;
+        align-items: flex-end;
+        min-height: 280px;
+        padding: 30px 35px;
+        border: 4px solid #8cc63e;
+        border-radius: 2px;
+        transition: all .2s ease-in-out;
+    }
+    &__image {
+        position: absolute;
+        user-select: none;
+        pointer-events: none;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 26px;
+        color: #086727;
+        transition: all .2s ease-in-out;
+    }
+}

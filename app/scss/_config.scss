@@ -37,6 +37,7 @@ $userfont: Roboto, sans-serif, Arial,-apple-system, BlinkMacSystemFont; // User 
 @include font('Roboto', normal, 400, '../fonts/roboto-400.woff2');
 @include font('Roboto', normal, 700, '../fonts/roboto-700.woff2');
 @include font('Roboto', normal, 900, '../fonts/roboto-900.woff2');
+@include font('ArialNarrow', normal, 400, '../fonts/arialnarrow-400.woff2');
 
 // GENERAL DOCUMENT STYLES
 
@@ -83,7 +84,12 @@ body {
 	width: 100%;
 	margin: 0 auto;
 }
-
+.container-small {
+	max-width: 1200px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
 .container {
 	max-width: 1440px;
 	width: 100%;

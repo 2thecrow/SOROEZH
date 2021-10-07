@@ -42,6 +42,10 @@
             transition: all .3s ease-in-out;
         }
     }
+    &__link--active {
+        color: #787878;
+        background-color: #fafafa;
+    }
     &__icon {
         display: flex;
         align-items: center;

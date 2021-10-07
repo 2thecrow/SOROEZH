@@ -1,5 +1,5 @@
 .calculator {
-    padding: 50px 0 130px;
+    padding: 50px 0 60px;
     &__container {}
     &__title {
         font-weight: 900;
@@ -11,12 +11,7 @@
     }
     &__block {}
     &_welcome {
-        .calculator-content__item_container {
-            .calculator-form__item:last-child {
-                grid-column: span 2;
-            }
-        }
-        
+        padding: 50px 0 130px;
     }
 }
 
@@ -141,6 +136,9 @@
         &_container {
             background-image: url(/img/dest/calc/container-bg.jpg);
             background-position: bottom right;
+            .calculator-form__item:last-child {
+                grid-column: span 2;
+            }
         }
         &_garbage {
             background-image: url(/img/dest/calc/garbage-bg.jpg);
