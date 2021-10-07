@@ -308,10 +308,10 @@
 					<div class="calculator-block__nav container">
 						<ul class="calculator-nav">
 							<li class="calculator-nav__item">
-								<a href="#calc-1" class="calculator-nav__link calculator-nav__link--active">Аренда и продажа контейнеров</a>
+								<a href="#calc-1" class="calculator-nav__link">Аренда и продажа контейнеров</a>
 							</li>
 							<li class="calculator-nav__item">
-								<a href="#calc-2" class="calculator-nav__link">Вывоз строительных отходов</a>
+								<a href="#calc-2" class="calculator-nav__link calculator-nav__link--active">Вывоз строительных отходов</a>
 							</li>
 							<li class="calculator-nav__item">
 								<a href="#calc-3" class="calculator-nav__link">
@@ -327,7 +327,7 @@
 				</div>
 				<div class="calculator-block__content calculator-content">
 					<!-- tab 1 -->
-					<div id="calc-1" class="calculator-content__item calculator-content__item_container calculator-content__item--active">
+					<div id="calc-1" class="calculator-content__item calculator-content__item_container">
 						<div class="container">
 							<div class="calculator-content__title">Аренда и продажа контейнеров</div>
 							<div class="calculator-content__form calculator-form">
@@ -336,7 +336,7 @@
 										<div class="calculator-form__title">Услуга</div>
 										<ul class="calculator-form__radio-group radio-group radio-group_service">
 											<li class="radio-group__field">
-												<input type="radio" name="service" id="service-1" class="radio-group__input-radio" checked="checked">
+												<input type="radio" name="service" id="service-1" class="radio-group__input-radio" checked >
 												<label for="service-1" class="radio-group__label">Продажа</label>
 											</li>
 											<li class="radio-group__field">
@@ -349,7 +349,7 @@
 										<div class="calculator-form__title">Тип контейнера</div>
 										<ul class="calculator-form__radio-group radio-group radio-group_container">
 											<li class="radio-group__field">
-												<input type="radio" name="container" id="container-1" class="radio-group__input-radio" checked="checked">
+												<input type="radio" name="container" id="container-1" class="radio-group__input-radio" checked>
 												<label for="container-1" class="radio-group__label">Новый</label>
 											</li>
 											<li class="radio-group__field">
@@ -410,24 +410,114 @@
 											</div>
 										</li>
 									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- tab 2 -->
+					<div id="calc-2" class="calculator-content__item calculator-content__item_garbage calculator-content__item--active">
+						<div class="container">
+							<div class="calculator-content__title">Вывоз строительных отходов</div>
+							<div class="calculator-content__form calculator-form">
+								<ul class="calculator-form__list">
+									<li class="calculator-form__item">
+										<div class="calculator-form__title">Тип услуги</div>
+										<ul class="calculator-form__radio-group radio-group radio-group_service">
+											<li class="radio-group__field">
+												<input type="radio" name="service-type" id="type-service-1" class="radio-group__input-radio" checked="checked">
+												<label for="type-service-1" class="radio-group__label">Продажа</label>
+											</li>
+											<li class="radio-group__field">
+												<input type="radio" name="service-type" id="type-service-2" class="radio-group__input-radio">
+												<label for="type-service-2" class="radio-group__label">Аренда</label>
+											</li>
+										</ul>
+									</li>
+									<li class="calculator-form__item">
+										<div class="calculator-form__title">Количество контейнеров</div>
+										<div class="defaul__input">
+											<input type="text" class="defaul__input-text" placeholder="Укажите количество контейнеров от 1 до 100">
+										</div>
+									</li>
+									<li class="calculator-form__item">
+										<div class="calculator-form__title">Вид контейнера</div>
+										<ul class="calculator-form__radio-group radio-container">
+											<li class="radio-container__field">
+												<input type="radio" name="select-type-container" id="select-type-container-2" class="radio-container__input-radio" checked="checked">
+												<label for="select-type-container-2" class="radio-container__label radio-container__label_metal">7.8 м3 (Металл) </label>
+											</li>
+											<li class="radio-container__field">
+												<input type="radio" name="select-type-container" id="select-type-container-3" class="radio-container__input-radio">
+												<label for="select-type-container-3" class="radio-container__label radio-container__label_full-metal">36 м3 (Металл) </label>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<div class="calculator-form__submit calc-submit">
+									<ul class="calc-submit__list">
+										<li class="calc-submit__item calc-submit__item_submit">
+											<div class="calc-submit__btn">
+												Отправить заявку
+											</div>
+											<div class="calc-submit__sum calc-sum">
+												<div class="calc-sum__title">Итого</div>
+												<div class="calc-sum__total">27 780 ₽</div>
+											</div>
+										</li>
+										<li class="calc-submit__item calc-submit__item_info">
+											<div class="calc-submit__info">
+												*Доставка до места установки рассчитывается индивидуально
+											</div>
+										</li>
+									</ul>
 									
 									
 									
 								</div>
 							</div>
 						</div>
-						
-					</div>
-					<!-- tab 2 -->
-					<div id="calc-2" class="calculator-content__item calculator-content__item_garbage">
-						<div class="container">
-							<div class="calculator-content__title">Вывоз строительных отходов</div>
-						</div>
 					</div>
 					<!-- tab 3 -->
 					<div id="calc-3" class="calculator-content__item calculator-content__item_business">
 						<div class="container">
 							<div class="calculator-content__title">Прием отходов на МПС</div>
+							<div class="calculator-content__form calculator-form">
+								<ul class="calculator-form__list">
+									<li class="calculator-form__item">
+										<div class="calculator-form__title">Выбрать МСП</div>
+										<select name="town" class="default-select" aria-label="Выберите город">
+											<option value="">Выберите город</option>
+											<option value="Город 1">Город 1</option>
+											<option value="Город 2">Город 2</option>
+											<option value="Город 3">Город 3</option>
+											<option value="Город 4">Город 4</option>
+											<option value="Город 5">Город 5</option>
+										</select>
+									</li>
+									<li class="calculator-form__item">
+										<div class="calculator-form__title">Количество отходов, м <sup>3</sup></div>
+										<div class="defaul__input">
+											<input type="text" class="defaul__input-text" placeholder="Количество отходов в квадратных метрах">
+										</div>
+									</li>
+								</ul>
+								<div class="calculator-form__submit calc-submit">
+									<ul class="calc-submit__list">
+										<li class="calc-submit__item calc-submit__item_submit">
+											<div class="calc-submit__btn">
+												Отправить заявку
+											</div>
+											<div class="calc-submit__invoice">
+												Получить счет
+											</div>
+											<div class="calc-submit__sum calc-sum">
+												<div class="calc-sum__title">Итого</div>
+												<div class="calc-sum__total">27 780 ₽</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

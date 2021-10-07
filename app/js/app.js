@@ -59,17 +59,17 @@ document.addEventListener('DOMContentLoaded', () => {
         $(href).addClass('calculator-content__item--active');
     });
 
-    const defaultSelect = () => {
-        const element = document.querySelector('.default-select');
-          const choices = new Choices(element, {
-              searchEnabled: false,
-              silent: true,
+    const multiDefault = () => {
+        const elements = document.querySelectorAll('.default-select');
+        elements.forEach(el => {
+            const choices = new Choices(el, {
+                searchEnabled: false,
+                silent: true,
+            });
         });
+        
+    }
     
-        let ariaLabel = element.getAttribute('aria-label');
-        element.closest('.choices').setAttribute('aria-label', ariaLabel);
-    };
-
-    defaultSelect();
+    multiDefault();
 
 })

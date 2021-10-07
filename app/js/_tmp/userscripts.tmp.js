@@ -54,15 +54,15 @@ document.addEventListener('DOMContentLoaded', function () {
     $(href).addClass('calculator-content__item--active');
   });
 
-  var defaultSelect = function defaultSelect() {
-    var element = document.querySelector('.default-select');
-    var choices = new Choices(element, {
-      searchEnabled: false,
-      silent: true
+  var multiDefault = function multiDefault() {
+    var elements = document.querySelectorAll('.default-select');
+    elements.forEach(function (el) {
+      var choices = new Choices(el, {
+        searchEnabled: false,
+        silent: true
+      });
     });
-    var ariaLabel = element.getAttribute('aria-label');
-    element.closest('.choices').setAttribute('aria-label', ariaLabel);
   };
 
-  defaultSelect();
+  multiDefault();
 });
