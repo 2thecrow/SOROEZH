@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Страница "Вакансии"</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="/imп/favicon.png">
+
+	<!-- Nornalize css -->
+	<link rel="stylesheet" href="/css/normalize.css">
+	<!-- Swiper styles -->
+	<link rel="stylesheet" href="/mylibs/swiper/swiper-bundle.min.css">
+	<!-- Choices select styles -->
+	<link rel="stylesheet" href="/mylibs/choices/choices.min.css">
+	<!-- main styles -->
+	<link rel="stylesheet" href="/css/app.css">
+	<!-- Swiper js -->
+	<script src="/mylibs/swiper/swiper-bundle.min.js"></script>
+	<!-- Choices select js -->
+	<script src="/mylibs/choices/choices.min.js"></script>
+	
+	<!-- Jquery del link on test server -->
+	<script
+	src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+	
+	<!-- main js -->
+	<script src="/js/app.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="overlay"></div>
+
+    <!-- header-nav -->
+	<nav class="header-nav">
+		<div class="container">
+			<div class="header-nav__wrapper">
+				<a href="/" class="header-nav__logo">
+					<img src="/img/dest/logo.png" alt="Logo" loading="lazy">
+				</a>
+				<div class="header-nav__right">
+					<div class="header-nav__slogan">Чистота ко двору!</div>
+					<div class="header-nav__info">
+						<div class="header-nav__contacts contact">
+							<div class="contact__phone">
+								<div class="contact__text">Прием заявок</div>
+								<a href="tel:+73843760215" class="contact__link">+7 (3843) 76-02-15</a>
+							</div>
+							<a href="mailto:info@ekograd.su" class="contact__mail">info@ekograd.su</a>
+						</div>
+						<div class="header-nav__callback">
+							<div class="callback-btn">Обратная связь</div>
+						</div>
+					</div>
+				</div>
+				<div class="burger">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+				</div>
+				<div class="mobile-menu">
+					<div class="mobile-menu__close">
+						<svg viewBox="0 0 24 24">
+							<path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849z"></path>
+						</svg>
+					</div>
+					<div class="mobile-menu__container">
+						<ul class="mobile-menu__nav mobile-nav">
+							<li class="mobile-nav__item">
+								<a href="#" class="mobile-nav__link">Меню</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="inner-page-nav wrapper">
+		<div class="container">
+			<ul class="inner-page-nav__list page-nav">
+				<li class="page-nav__item page-nav__item_garbage-container">
+					<a href="/sell_buy-containers.html" class="page-nav__link">
+						<div class="page-nav__link-text">
+							Аренда и продажа контейнеров
+						</div>
+					</a>
+				</li>
+				<li class="page-nav__item page-nav__item_garbage-truck">
+					<a href="/stoy-musor.html" class="page-nav__link">
+						<div class="page-nav__link-text">
+							Вывоз строительных отходов
+						</div>
+					</a>
+				</li>
+				<li class="page-nav__item page-nav__item_bricks">
+					<a href="/musor-ot-mps.html" class="page-nav__link">
+						<div class="page-nav__link-text">
+							Прием отходов  на МПС 
+							<span class="page-nav__tooltip">
+								<img src="/img/dest/icons/information-tooltip-icon.png" alt="Tooltip" loading="lazy">
+							</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+    <!-- page-hor / page-hero_vacancy -->
+    <div class="page-hero page-hero_vacancy container-large">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="/" class="breadcrumbs__link">Главная</a>
+            </div>
+            <h1 class="page-hero__title">Вакансии</h1>
+            <div class="page-hero__description container-small">
+                <p>
+					На&nbsp;сегодняшний день наша компания является признанным лидером в&nbsp;сфере сбора и&nbsp;транспортирования ТКО и&nbsp;известна 
+					под собственным именем &laquo;СОРОЕЖКА&raquo;. В&nbsp;нашей команде трудятся настоящие профессионалы своего дела, которые знают свою работу 
+					на&nbsp;отлично и&nbsp;любят&nbsp;ее. Мы&nbsp;приглашаем вас стать частью нашей команды!
+				</p>
+            </div>
+			<div class="vacancy-hero container-small">
+				<div class="vacancy-hero__title">Мы предлагаем:</div>
+				<ul class="vacancy-hero__list">
+					<li class="vacancy-hero__item">Официальное оформление по ТК РФ</li>
+					<li class="vacancy-hero__item">Полный социальный пакет</li>
+					<li class="vacancy-hero__item">Своевременная "белая" заработная плата 2 раза в месяц</li>
+					<li class="vacancy-hero__item">Ежегодные оплачиваемые отпуска продолжительностью 28 календарных дней</li>
+					<li class="vacancy-hero__item">Обучение работников непосредственно на рабочих местах</li>
+					<li class="vacancy-hero__item">Плановые медицинские осмотры работников</li>
+					<li class="vacancy-hero__item">Подарки детям сотрудников на Новый год</li>
+					<li class="vacancy-hero__item">Доставка сотрудников транспортом по району</li>
+					<li class="vacancy-hero__item">Рабочее место, обеспеченное всеми необходимыми ресурсами</li>
+					<li class="vacancy-hero__item">Карьерный рост</li>
+					<li class="vacancy-hero__item">Теплую обстановку внутри коллектива</li>
+				</ul>
+			</div>
+        </div>
+    </div>
+
+	<div class="vacancy wrapper">
+		<div class="container">
+			<ul class="vacancy__list">
+				<li class="vacancy__item">
+					<div class="vacancy__card vacancy-card">
+						<div class="vacancy-card__info vacancy-info">
+							<div class="vacancy-info__container">
+								<div class="vacancy-info__salary">45 000 - 49 000 ₽</div>
+								<ul class="vacancy-info__list offer-list">
+									<li class="offer-list__item">
+										Средне-специальное образование
+									</li>
+									<li class="offer-list__item">
+										Стаж работы 3-5 лет
+									</li>
+									<li class="offer-list__item">
+										Сменный график
+									</li>
+									<li class="offer-list__item">
+										Полная занятость
+									</li>
+								</ul>
+								<div class="vacancy-info__btn">Откликнуться</div>
+							</div>
+						</div>
+						<div class="vacancy-card__description vacancy-description">
+							<div class="vacancy-description__title">Механик</div>
+							<div class="vacancy-description__address">г. Новокузнецк, Центральный район, Театральный проезд, 2/1</div>
+							<div class="vacancy-description__content">
+								<div class="vacancy-description__sub-title">Что вам предстоит делать</div>
+								<ul class="vacancy-description__list vacancy-description__list_work">
+									<li class="vacancy-description__item">
+										организация работы по техническому обслуживанию и ремонту автомобилей (мусоровозы) 
+										и спецоборудования, приемке после смены
+									</li>
+									<li class="vacancy-description__item">
+										составление заявок на приобретение необходимых запасных частей, ремонтных материалов, 
+										инструмента
+									</li>
+									<li class="vacancy-description__item">
+										ведение отчетной документации по расходованию ТМЦ, в том числе ГСМ
+									</li>
+								</ul>
+								<div class="vacancy-description__sub-title">Что нужно знать и уметь</div>
+								<ul class="vacancy-description__list vacancy-description__list_experience">
+									<li class="vacancy-description__item">
+										опыт работы механиком от 3-х лет, желательно с автомобилями марки SCANIA, MERCEDES
+									</li>
+									<li class="vacancy-description__item">
+										профессиональное образование
+									</li>
+									<li class="vacancy-description__item">
+										знание ПК
+									</li>
+									<li class="vacancy-description__item">
+										умение работать с каталогом запчастей
+									</li>
+									<li class="vacancy-description__item">
+										обязательно наличие категории С
+									</li>
+								</ul>
+								<div class="vacancy-description__sub-title">Что мы прелагаем</div>
+								<ul class="vacancy-description__list vacancy-description__list_offer">
+									<li class="vacancy-description__item">
+										график работы 1/3
+									</li>
+									<li class="vacancy-description__item">
+										официальное трудоустройство
+									</li>
+									<li class="vacancy-description__item">
+										полный социальный пакет
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="vacancy__item">
+					<div class="vacancy__card vacancy-card">
+						<div class="vacancy-card__info vacancy-info">
+							<div class="vacancy-info__container">
+								<div class="vacancy-info__salary">от 23 500 ₽</div>
+								<ul class="vacancy-info__list offer-list">
+									<li class="offer-list__item">
+										Без опыта
+									</li>
+									<li class="offer-list__item">
+										Сменный график
+									</li>
+									<li class="offer-list__item">
+										Полная занятость
+									</li>
+								</ul>
+								<div class="vacancy-info__btn">Откликнуться</div>
+							</div>
+						</div>
+						<div class="vacancy-card__description vacancy-description">
+							<div class="vacancy-description__title">Оператор загрузочной и разгрузочной установки</div>
+							<div class="vacancy-description__address">г. Новокузнецк, Центральный район, Театральный проезд, 2/1</div>
+							<div class="vacancy-description__content">
+								<div class="vacancy-description__sub-title">Что вам предстоит делать</div>
+								<ul class="vacancy-description__list vacancy-description__list_work">
+									<li class="vacancy-description__item">
+										Осуществление выгрузки ТКО из контейнеров и зачистка контейнерных площадок
+									</li>
+									<li class="vacancy-description__item">
+										Перемещение (подкат) контейнеров к мусоровозу
+									</li>
+									<li class="vacancy-description__item">
+										Возвращение пустых контейнеров на контейнерную площадку с закрытыми крышками, и установка контейнеров на тормоз
+									</li>
+									<li class="vacancy-description__item">
+										Мойка контейнеров;
+									</li>
+									<li class="vacancy-description__item">
+										Своевременное информирование диспетчера о недочетах на вверенном маршруте
+									</li>
+								</ul>
+								<div class="vacancy-description__sub-title">Что мы прелагаем</div>
+								<ul class="vacancy-description__list vacancy-description__list_offer">
+									<li class="vacancy-description__item">
+										график работы 1/3;
+									</li>
+									<li class="vacancy-description__item">
+										своевременная заработная плата
+									</li>
+									<li class="vacancy-description__item">
+										официальное трудоустройство
+									</li>
+									<li class="vacancy-description__item">
+										полный социальный пакет
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<footer class="footer wrapper">
+		<nav class="footer__nav footer-nav container-large">
+			<ul class="footer-nav__list container">
+				<li class="footer-nav__item">
+					<a href="" class="footer-nav__link">Вакансии</a>
+				</li>
+				<li class="footer-nav__item">
+					<a href="" class="footer-nav__link">Лицензия</a>
+				</li>
+				<li class="footer-nav__item">
+					<a href="" class="footer-nav__link">Часто задаваемые вопросы</a>
+				</li>
+				<li class="footer-nav__item">
+					<a href="" class="footer-nav__link">Автопарк</a>
+				</li>
+				<li class="footer-nav__item">
+					<a href="" class="footer-nav__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="footer__supports">
+					<div class="footer__copyright">© 2021 Сороежка, Новокузнецк. Все права защищены.</div>
+					<div class="footer__address footer-address">
+						<a href="tel:+" class="footer-address__link">+7(3843) 76-02-15</a>
+						<div class="footer-address__base">, г.Новокузнецк, ул. Запорожская, 21 А</div>
+					</div>
+					<div class="developers">
+						Разработка сайта — <a href="" class="developers__link">Айти-Сити</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+
+</body>
+
+</html>

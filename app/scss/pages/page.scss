@@ -10,6 +10,13 @@
     &__business {
         padding: 50px 0 205px;
     }
+    &_vacancy {
+        padding: 50px 0 195px;
+    }
+    &_contacts {
+        background-color: var(--main-bg);
+        padding: 50px 0 0;
+    }
     &__title {
         font-weight: 900;
         font-size: 48px;

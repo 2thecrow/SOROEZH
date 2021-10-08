@@ -1,0 +1,88 @@
+.contacts {
+    margin-bottom: 130px;
+    &__content {
+        display: flex;
+    }
+    &__info-card {
+        flex: 0 0 570px;
+        padding: 130px 0;
+        margin-right: -90px;
+    }
+    &__map {
+
+    }
+}
+
+.contact-card {
+    position: relative;
+    font-size: 18px;
+    line-height: 28px;
+    background-color: var(--white-bg);
+    padding: 60px 120px;
+    border-radius: 8px;
+    z-index: 1;
+    &__address {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    &__work-time {
+        span {
+            font-weight: 900;
+        }
+        margin-bottom: 20px;
+    }
+    &__phones {
+        
+        margin-bottom: 20px;
+    }
+    &__phone {
+        display: block;
+        position: relative;
+        font-weight: 900;
+        color: var(--main-text);
+        padding-left: 25px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        &:first-child {
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 16px;
+                background-image: url(/img/dest/icons/phone-icon_dark.png);
+                background-repeat: no-repeat;
+            }
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__mail {
+        display: block;
+        position: relative;
+        font-weight: 700;
+        color: #3b8455;
+        padding-left: 25px;
+        text-decoration: none;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 17px;
+            height: 13px;
+            background-image: url(/img/dest/icons/mail-icon_green.png);
+            background-repeat: no-repeat;
+            
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+

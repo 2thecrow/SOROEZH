@@ -269,6 +269,11 @@
         &:not(:last-child) {
             margin-right: 35px;
         }
+        &:first-child {
+            .radio-container__label_metal {
+                margin-left: 25px;
+            }
+        }
     }
     &__input-radio {
         appearance: none;

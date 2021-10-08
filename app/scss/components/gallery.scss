@@ -1,0 +1,96 @@
+.gallery {
+    padding: 50px 0 115px;
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 52px;
+        margin: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__slider {
+        position: relative;
+    }
+}
+
+
+.photo-gallary {
+    position: relative;
+    &__link {
+        position: relative;
+        max-width: 330px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in-out;
+        &::before {
+            opacity: 0;
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-image: url(/img/dest/swiper/loop.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all .3s ease-in-out;
+            z-index: 1;
+        }
+        &:hover {
+            .photo-gallary__image {
+                filter: blur(2px) brightness(0.8);
+            }
+            transition: all .3s ease-in-out;
+            &::before {
+                opacity: 1;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+    &__image {
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    &__nav {
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 56px;
+            height: 56px;
+            background-color: var(--white-bg);
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            margin: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            &::after {
+                display: none;
+            }
+            &:hover {
+                background-color: #2a800e;
+            }
+        }
+        .swiper-button-prev {
+            left: -25px;
+            background-image: url(/img/dest/swiper/arrow-left_accent.png);
+            &:hover {
+                background-image: url(/img/dest/swiper/arrow-left.png);
+            }
+        }
+        .swiper-button-next {
+            right: -25px;
+            background-image: url(/img/dest/swiper/arrow-right_accent.png);
+            &:hover {
+                background-image: url(/img/dest/swiper/arrow-right.png);
+            }
+        }
+    }
+    
+}

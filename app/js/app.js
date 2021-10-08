@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-	const swiper = new Swiper('.welcome-slider', {
+	const welcomeSlider = new Swiper('.welcome-slider', {
 		// Optional parameters
 		/* autoHeight: "auto", */
 		loop: true,
@@ -17,7 +17,24 @@ document.addEventListener('DOMContentLoaded', () => {
 		  prevEl: '.swiper-button-prev',
 		},
 
+    });
+    
+    const photoSlider = new Swiper('.photo-gallary', {
+		// Optional parameters
+		autoHeight: "auto",
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 30,
+
+	  
+		// Navigation arrows
+		navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		},
+
 	});
+
 
 	const menu = document.querySelector('.mobile-menu'),
         burger = document.querySelector('.burger'),
