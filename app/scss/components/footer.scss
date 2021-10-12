@@ -29,7 +29,7 @@
         list-style: none;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         padding: 14px 15px;
     }
     &__item {
@@ -54,6 +54,7 @@
 
 .footer-address {
     display: flex;
+    flex-wrap: wrap;
     font-size: 14px;
     line-height: 24px;
     color: var(--white-text);

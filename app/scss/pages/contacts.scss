@@ -1,12 +1,15 @@
 .contacts {
     margin-bottom: 130px;
     &__content {
+        position: relative;
         display: flex;
     }
     &__info-card {
+        max-width: 570px;
+        width: 100%;
         flex: 0 0 570px;
         padding: 130px 0;
-        margin-right: -90px;
+        /* margin-right: -90px; */
     }
     &__map {
 
@@ -86,3 +89,14 @@
     }
 }
 
+.map {
+    position: absolute;
+    right: 0;
+    max-width: 1050px;
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

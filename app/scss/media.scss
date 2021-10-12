@@ -1,19 +1,88 @@
+/* container-large  */
+@media screen and (max-width:1695px) {
+    .footer__nav {
+        width: auto;
+        margin: 0 15px;
+    }
+}
+
 @media screen and (max-width:1665px) {
     .header-nav_welcome {
         margin-top: 0;
         margin-bottom: 0;
     }
 }
+@media screen and (max-width:1440px) {
+    .page-hero__title {
+        /* font-size: calc(32px + 16 * ((100vw - 375px)/ (1920 - 375))); */
+        font-size: calc(32px + (48 — 32) * ((100vw — 1920px) / (1920 — 375)));
+        line-height: 1.2;
+    }
+}
 
-@media screen and (max-width:1255px) {
+@media screen and (max-width:1260px) {
     .header-nav__slogan {
         display: none;
     }
     .header-nav__right {
         justify-content: flex-end;
     }
+    .inner-page-nav .page-nav__link {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 25px 15px;
+    }
+}
+/* 1200px */
+@media screen and (max-width:1199.9px) {
+    .contacts {
+        margin-bottom: 90px;
+    }
+    .footer__supports {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer__copyright,
+    .footer-address {
+        margin-right: 30px;
+    }
+    .developers {
+        margin-left: 0;
+    }
+    
+}
+@media screen and (max-width:1080px) {
+    .inner-page-nav .page-nav__link {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 20px 15px;
+    }
+    .contacts__content {
+        flex-direction: column;
+        
+    }
+    .contacts__info-card {
+        flex: auto;
+        padding: 0;
+        margin: 0 auto 30px;
+    }
+    .map {
+        position: relative;
+        right: auto;
+        height: 300px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 @media screen and (max-width:1050px) {
+    .footer-nav__list {
+        justify-content: space-between;
+    }
+    .footer-nav__item:not(:last-child) {
+        margin-right: 30px;
+    }
     .contact {
         justify-content: center;
         margin-right: 30px;
@@ -47,6 +116,30 @@
         }
     }
 }
+/* 992px */
+@media screen and (max-width:991.9px) {
+    .contacts {
+        margin-bottom: 60px;
+    }
+    .footer__bottom {
+        padding: 63px 0 35px;
+    }
+}
+@media screen and (max-width:988px) {
+    .inner-page-nav .page-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+    .inner-page-nav .page-nav__item {
+        margin-bottom: 15px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
 @media screen and (max-width:805px) {
     .contact__text {
         display: none;
@@ -55,6 +148,19 @@
 
 /* 768px */
 @media screen and (max-width:767.9px) {
+    .footer__bottom {
+        padding: 30px 0;
+        margin-top: 0;
+    }
+    .footer-nav__list {
+        display: none;
+    }
+    .breadcrumbs {
+        padding: 30px 0;
+    }
+    .inner-page-nav {
+        padding: 30px 0 0;
+    }
     .header-nav {
         padding: 15px 0;
         &__logo {
@@ -90,18 +196,65 @@
         }
     }
 }
-
+@media screen and (max-width:590px) {
+    .inner-page-nav .page-nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .inner-page-nav .page-nav__item {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto 15px;
+        &:not(:last-child) {
+            margin-right: auto;
+        }
+    }
+    
+}
+@media screen and (max-width:625px) {
+    .footer__bottom {
+        padding: 30px 0 25px;
+    }
+    .footer__supports {
+        flex-direction: column;
+    }
+    .footer-address, .footer__copyright, .developers {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
 /* 576px */
 @media screen and (max-width:575.9px) {
+    .breadcrumbs {
+        padding: 15px 0;
+    }
     .burger {
         display: flex;
     }
     .header-nav .callback-btn {
         display: none;
     }
+    .contacts__info-card {
+        max-width: 390px;
+    }
+    .contact-card {
+        padding: 60px 60px;
+    }
+}
+@media screen and (max-width:480px) {
+    
+    .footer__copyright {
+        font-size: 13px;
+    }
+    
 }
 
-
+@media screen and (max-width:400px) {
+    .contact-card {
+        padding: 30px 30px;
+    }
+}
 @media screen and (max-width:380px) {
     .contact {
         margin-right: 10px;
