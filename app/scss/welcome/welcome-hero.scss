@@ -52,7 +52,7 @@
         overflow: hidden; /* include for safety */
         display: -webkit-box; /* setting a block element  */
         -webkit-box-orient: vertical; /* companion class   */
-        -webkit-line-clamp: 5; /* number of lines  */
+        -webkit-line-clamp: 3; /* number of lines  */
     }
     .welcome-swiper-nav {
         position: absolute;

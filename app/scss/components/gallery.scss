@@ -23,6 +23,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
         transition: all .3s ease-in-out;
         &::before {
             opacity: 0;

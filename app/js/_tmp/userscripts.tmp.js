@@ -23,6 +23,24 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 30,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      720: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      1050: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
