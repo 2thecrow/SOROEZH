@@ -510,15 +510,6 @@
         }
     }
 }
-/* @media screen and (max-width: 950px) {
-    .containers-grid__list {
-        flex-direction: column;
-        align-content: center;
-    }
-    .containers-grid__item  {
-        margin-right: 0;
-    }
-} */
 @media screen and (max-width:920px) {
     .page-hero_rent-sale {
         padding: 0 0 300px;
@@ -544,6 +535,9 @@
 }
 /* 768px */
 @media screen and (max-width:767.9px) {
+    .gallery {
+        padding: 30px 0px 60px;
+    }
     .calculator-content__item_business .calculator-form__list {
         grid-template-columns: 1fr;
     }
@@ -716,7 +710,6 @@
     }
     
 }
-
 /* 576px */
 @media screen and (max-width:575.9px) {
     .calculator-content__item_container .calc-submit__item_submit {
@@ -817,7 +810,6 @@
         text-align: center;
     }
 }
-
 @media screen and (max-width:480px) {
     
     .footer__copyright {
@@ -825,7 +817,6 @@
     }
     
 }
-
 @media screen and (max-width:400px) {
     .contact-card {
         padding: 30px 30px;

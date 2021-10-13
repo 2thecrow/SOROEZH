@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Модалка Вакансий</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="/imп/favicon.png">
+
+	<!-- Nornalize css -->
+	<link rel="stylesheet" href="/css/normalize.css">
+	<!-- Swiper styles -->
+	<link rel="stylesheet" href="/mylibs/swiper/swiper-bundle.min.css">
+	<!-- Choices select styles -->
+	<link rel="stylesheet" href="/mylibs/choices/choices.min.css">
+	<!-- main styles -->
+	<link rel="stylesheet" href="/css/app.css">
+	<!-- Swiper js -->
+	<script src="/mylibs/swiper/swiper-bundle.min.js"></script>
+	<!-- Choices select js -->
+	<script src="/mylibs/choices/choices.min.js"></script>
+	
+	<!-- Jquery del link on test server -->
+	<script
+	src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+	
+	<!-- main js -->
+	<script src="/js/app.min.js"></script>
+
+</head>
+
+<body style="background-color: aquamarine;">
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+    <div class="vacancy-modal">
+		<div class="vacancy-modal__container">
+			<div class="vacancy-modal__title">Откликнуться на вакансию</div>
+			<div class="vacancy-modal__description">
+				Напишите свое имя и телефон, чтобы мы могли связаться с вами.
+			</div>
+			<div class="vacancy-modal__form vacancy-form">
+				<div class="vacancy-form__item vacancy-form__item_text">
+					<div class="vacancy-form__item-title">Как к вам обращаться</div>
+					<input type="text" placeholder="Например: Иванов Иван Иванович" class="vacancy-form__input-text">
+				</div>
+				<div class="vacancy-form__item vacancy-form__item_text">
+					<div class="vacancy-form__item-title">Ваш телефон</div>
+					<input type="text" placeholder="Номер телефона в любом формате" class="vacancy-form__input-text">
+				</div>
+				<div class="vacancy-form__item vacancy-form__item_file file-input">
+					<div class="vacancy-form__item-title">Прикрепите резюме (не обязательно)</div>
+					<div class="file-input__container">
+						<label for="files" class="file-input__input-container">Выберите файл</label>
+						<div class="file-input__desc">
+							<div class="file-input__text">Приложение 1_Бриф.doc (5.2 МБ)</div>
+							<div class="file-input__clean">Удалить</div>
+						</div>
+						<input type="file" name="" id="files" class="file-input__input">
+					</div>
+				</div>
+				<div class="vacancy-form__item vacancy-form__item_text-area">
+					<div class="vacancy-form__item-title">Сопроводительное сообщение</div>
+					<textarea name="" id="" rows="6" placeholder="Здесь напишите что-нибудь..." class="vacancy-form__text-area"></textarea>
+				</div>
+			</div>
+			<div class="vacancy-modal__submit modal-submit">
+				<div class="modal-submit__btn gradient-btn">Отправить</div>
+				<div class="modal-submit__checkbox modal-checkbox">
+					<input type="checkbox" id="check-data" class="modal-checkbox__input">
+					<label for="check-data" class="modal-checkbox__label">Согласен на обработку персональных данных</label>
+				</div>
+			</div>
+			<div class="vacancy-modal__contacts modal-contacts">
+				<div class="modal-contacts__description">По вопросам трудоустройства вы так же можете обратиться в отдел кадров:</div>
+				<div class="modal-contacts__item">
+					<a href="tel:83843000000" class="modal-contacts__phone">8 (3843) 00-00-00</a>
+					<div class="modal-contacts__contact-person">&nbsp;—&nbsp;Чегодаева Татьяна Михайловна, с 8:30 до 17:30</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+</body>
+
+</html>
