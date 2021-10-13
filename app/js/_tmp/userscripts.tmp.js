@@ -47,34 +47,32 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: '.swiper-button-prev'
     }
   });
-  var menu = document.querySelector('.mobile-menu'),
-      burger = document.querySelector('.burger'),
-      overlay = document.querySelector('.overlay'),
-      closeMenu = document.querySelector('.mobile-menu__close');
+  /* const menu = document.querySelector('.mobile-menu'),
+         burger = document.querySelector('.burger'),
+         overlay = document.querySelector('.overlay'),
+         closeMenu = document.querySelector('.mobile-menu__close');
+      const lockScroll = () => {
+         document.body.classList.add('lock');
+     }
+      const unlockScroll = () => {
+         document.body.classList.remove('lock');
+     }
+      burger.addEventListener('click', () => {
+         menu.classList.add('open');
+         overlay.classList.add('open');
+         lockScroll();
+     });
+      closeMenu.addEventListener('click', () => {
+         menu.classList.remove('open');
+         overlay.classList.remove('open');
+         unlockScroll();
+     });
+      overlay.addEventListener('click', () => {
+         menu.classList.remove('open');
+         overlay.classList.remove('open');
+         unlockScroll();
+     }); */
 
-  var lockScroll = function lockScroll() {
-    document.body.classList.add('lock');
-  };
-
-  var unlockScroll = function unlockScroll() {
-    document.body.classList.remove('lock');
-  };
-
-  burger.addEventListener('click', function () {
-    menu.classList.add('open');
-    overlay.classList.add('open');
-    lockScroll();
-  });
-  closeMenu.addEventListener('click', function () {
-    menu.classList.remove('open');
-    overlay.classList.remove('open');
-    unlockScroll();
-  });
-  overlay.addEventListener('click', function () {
-    menu.classList.remove('open');
-    overlay.classList.remove('open');
-    unlockScroll();
-  });
   $('.calculator-nav__link').click(function (e) {
     e.preventDefault();
     $('.calculator-nav__link').removeClass('calculator-nav__link--active');

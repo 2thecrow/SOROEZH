@@ -38,13 +38,41 @@
 	position: fixed;
 	right: 0;
 	top: 0;
+	height: 100%;
     display: none;
 	background-color: #fff;
-	z-index: 100;
 	transition: opacity .3s ease-in-out;
 	&.open {
 		display: block;
 		opacity: 1;
 		transition: opacity .3s ease-in-out;
+		z-index: 100;
+	}
+	&__close {
+		width: 40px;
+		height: 40px;
+		margin-top: 10px;
+		margin-left: -20px;
+	}
+}
+
+.mobile-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding: 30px;
+	&__item {
+
+	}
+	&__link {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 32px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: var(--main-text);
+		&:hover {
+			color: var(--main-text);
+		}
 	}
 }

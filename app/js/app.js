@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 
-	const menu = document.querySelector('.mobile-menu'),
+	/* const menu = document.querySelector('.mobile-menu'),
         burger = document.querySelector('.burger'),
         overlay = document.querySelector('.overlay'),
         closeMenu = document.querySelector('.mobile-menu__close');
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.remove('open');
         overlay.classList.remove('open');
         unlockScroll();
-    });
+    }); */
 
     $('.calculator-nav__link').click(function (e) {
         e.preventDefault();
